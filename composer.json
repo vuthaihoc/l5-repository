@@ -27,7 +27,7 @@
     "illuminate/pagination": "6.0.*",
     "illuminate/console": "6.0.*",
     "illuminate/filesystem": "6.0.*",
-    "prettus/laravel-validation": "1.1.*"
+    "hocvt/laravel-validation": "6.0.*"
   },
   "autoload": {
     "psr-4": {
