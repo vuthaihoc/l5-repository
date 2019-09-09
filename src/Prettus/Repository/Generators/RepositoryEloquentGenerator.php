@@ -1,6 +1,7 @@
 <?php
 namespace Prettus\Repository\Generators;
 
+use Illuminate\Support\Str;
 use Prettus\Repository\Generators\Migrations\SchemaParser;
 
 /**
@@ -66,7 +67,7 @@ class RepositoryEloquentGenerator extends Generator
     public function getReplacements()
     {
         $repository = parent::getRootNamespace() . parent::getConfigGeneratorClassPath('interfaces') . '\\' . $this->name . 'Repository;';
-        $repository = str_replace([
+        $repository = Str::replace([
             "\\",
             '/'
         ], '\\', $repository);
